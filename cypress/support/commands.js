@@ -23,3 +23,30 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import signUpLoginPage from '../support/pages/SignUpLoginPage'
+
+Cypress.Commands.add('registerUser', (user)=> {
+    
+    signUpLoginPage.visitSignUpLoginPage(1920,1080)
+    signUpLoginPage.signUpLoginPageIsVisible()
+    signUpLoginPage.fillSignUpData(user)
+    signUpLoginPage.submitNewUserSignUpData()
+    signUpLoginPage.fillUserAccountInformation(user)
+    signUpLoginPage.fillUserAddressInformation(user)
+    signUpLoginPage.submitUserDataAndCreateAccount(user)
+})
+
+Cypress.Commands.add('deleteUserAPI', (user) =>{
+    cy.request({
+        method: 'DELETE',
+        url: 'https://automationexercise.com/api/deleteAccount',
+        form: true,
+        body: {
+          email: user.email,
+          password: user.password
+        }
+      }).then((response) => {
+        cy.log(response.body)
+      })
+})

@@ -1,0 +1,40 @@
+{
+  "register_data": {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john_doe@email.com",
+    "password": "Aa@12345",
+    "birth_date": {
+      "day": 1,
+      "month": 3,
+      "year": "1989"
+    },
+    "company": "Fake Company",
+    "address": "Fake Street",
+    "address2": "Fake Avenue",
+    "country": "India",
+    "state": "Fake State",
+    "city": "Fake City",
+    "zip_code": "123456",
+    "mobile_number": "32999998888"
+  },
+  "incorrect_user": {
+    "first_name": "incorrect_John",
+    "last_name": "incorrect_Doe",
+    "email": "incorrect_john_doe@email.com",
+    "password": "incorrect_Aa@12345",
+    "birth_date": {
+      "day": 1,
+      "month": 3,
+      "year": "1989"
+    },
+    "company": "Fake Company",
+    "address": "Fake Street",
+    "address2": "Fake Avenue",
+    "country": "India",
+    "state": "Fake State",
+    "city": "Fake City",
+    "zip_code": "123456",
+    "mobile_number": "32999998888"
+  }
+}
