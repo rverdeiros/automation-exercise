@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-import signUpLoginPage from '../support/pages/SignUpLoginPage'
+import signUpLoginPage from '../support/pages/SignUpLoginPage.js'
 
 Cypress.Commands.add('registerUser', (user)=> {
     

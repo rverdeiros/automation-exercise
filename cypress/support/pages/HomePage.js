@@ -1,4 +1,5 @@
-import header from './components/header'
+import header from './components/Header.js'
+
 
 class HomePage {
 

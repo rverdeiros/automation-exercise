@@ -1,9 +1,9 @@
-import homePage from '../support/pages/HomePage'
-import signUpLoginPage from '../support/pages/SignUpLoginPage'
+import homePage from '../support/pages/HomePage.js'
+import signUpLoginPage from '../support/pages/SignUpLoginPage.js'
 import users from '../fixtures/users.json'
-import contactUsPage from '../support/pages/ContactUsPage'
-import testCasesPage from '../support/pages/TestCasesPage'
-import productsPage from '../support/pages/ProductsPage'
+import contactUsPage from '../support/pages/ContactUsPage.js'
+import testCasesPage from '../support/pages/TestCasesPage.js'
+import productsPage from '../support/pages/ProductsPage.js'
 
 
 describe('Automation Practice exercises', () => {
